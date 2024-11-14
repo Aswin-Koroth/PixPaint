@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    background-color:#9921e8;
+    background-image:linear-gradient(180deg, #9921e8 0%, #5f72be 74%);
+    font-family:"Poppins",sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#40407a;
+    max-width:80vh;
+    padding: 2rem 2rem;
+    border-radius:.5em;
+    border:1px solid black;
+}
+
+.con{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:60vh;
+    height:60vh;
+    border-radius:.4em;
+    overflow:hidden;
+    border:1px solid black;
+    cursor: crosshair;
+}
+
+.row{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.pixel{
+    background:#f2f2f2;
+    border:none;
+    width:1vh;
+    height:1vh;
+    -webkit-user-select: none;
+
+}
+
+.color{
+    margin-top:2em;
+    background:#706fd3;
+    border:1px solid black;
+    width:60vh;
+    height:75px;
+    max-height:75px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:.3em;
+    padding: 1px 2em;
+    overflow: hidden;
+}
+.color span, .color span:hover{
+    display:flex;
+    border-radius: 8px 0 0 8px;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    cursor:default;
+    background:#2c2c54;
+    margin-right:.5em;
+    font-weight:400;
+    font-size:1.3em;
+}
+
+.color .btn{
+   flex:1;
+}
+
+input[type="color"] {
+
+    width:55px;
+    height:50px;
+    margin-right:2em;
+    margin-left:-2em;
+    border-radius:0 8px 8px 0;
+    overflow:hidden;
+    border:none;
+    border-right:10px solid #2c2c54;
+    background:#2c2c54;
+    cursor:pointer;
+}
+
+.brush{
+    background:#706fd3;
+    border:1px solid black;
+    margin-top:1em;
+    padding:1px 1em;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    border-radius:.3em;
+    width:60vh;
+    height:75px;
+}
+
+.btn{
+    background:#2c2c54;
+    border:none;
+    color:white;
+    width:100px;
+    height:50px;
+    max-height:50px;
+    border-radius: 8px;
+    padding:.3em 1em;
+    font-family:Poppins;
+    font-size:1.2em;
+    cursor:pointer;
+}
+.btn:hover{
+    background:#40407a;
+}
+
+.btn.selected {
+    background:#2ecc71;
+    border: 1px solid black;
+}
+input.selected:hover {
+    background:#27ae60;
+}
